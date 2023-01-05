@@ -5,12 +5,12 @@
 # atribuir um valor a um nome (variável).
 # Uso: nome_variavel = expressão
 
-nomeCompleto = 'Lucas Alves da Conceição'
+nome_completo = 'Lucas Alves da Conceição'
 soma = 2 + 2
-print(nomeCompleto, soma)
+print(nome_completo, soma)
 
 nome = 'Lucas'
 idade = 26
-maiorDeIdade = idade >= 18
+maior_de_idade = idade >= 18
 print('Nome:', nome, 'Idade:', idade)
-print('É maior de idade?', maiorDeIdade)
+print('É maior de idade?', maior_de_idade)
