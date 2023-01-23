@@ -3,6 +3,10 @@
 # Execultar uma ação enquanto uma condição for verdadeira
 # Loop infinito
 
-while True:
-    ...
+contador = 0
+
+while contador <= 1000:
+    print(contador)
+    contador = contador + 10
+
 print('FIM')
