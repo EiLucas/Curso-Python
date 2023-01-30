@@ -1,9 +1,25 @@
 # Calculadora com while
+# .lower() retorna string em minusculo
+# .startswith('s') verifica se foi digitado "s" e retorna boolean
 
-sair = ''
 while True:
+    numero_1 = input('Digite um número: ')
+    numero_2 = input('Digite outro numero: ')
+    operador = input('Digite um operador (+-/*): ')
+
+    try:
+        num_1_float = float(numero_1)
+        num_2_float = float(numero_2)
+        numeros_validos = True
+    except:
+        numeros_validos = None
+
+    if numeros_validos is None:
+        print('Um ou ambos os números digitados são inválidos.')
+        continue
+
     sair = input('Quer sair? [s]im: ').lower().startswith('s')
-    # sair = sair.lower() retorna string em minusculo
-    # sair = sair.startswith('s') verifica se foi digitado "s" e retorna boolean
-    print("saiu")
+    
+    if sair is True:
+        break
     
