@@ -18,6 +18,16 @@ while True:
         print('Um ou ambos os números digitados são inválidos.')
         continue
 
+    operadores_permitidos = '+-/*'
+
+    if operador not in operadores_permitidos:
+        print('Operador invalido.')
+        continue
+
+    if len(operador) > 1:
+        print('Digite apenas um operador.')
+        continue
+
     sair = input('Quer sair? [s]im: ').lower().startswith('s')
     
     if sair is True:
